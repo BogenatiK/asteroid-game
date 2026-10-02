@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Перелёт Земля — Луна</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game" class="game">
+
+    <section id="screen-start" class="screen screen--active">
+      <h1 class="title">Перелёт Земля — Луна</h1>
+      <p class="subtitle">Уничтожь астеройды, пока они не долетели до ракеты</p>
+
+      <div class="difficulty">
+        <button class="diff-btn diff-btn--active" data-diff="easy">Лёгкий</button>
+        <button class="diff-btn" data-diff="medium">Средний</button>
+        <button class="diff-btn" data-diff="hard">Сложный</button>
+      </div>
+
+      <button id="btn-start" class="btn btn--primary">Начать игру</button>
+    </section>
+
+    <section id="screen-play" class="screen">
+      <div class="hud">
+        <div class="hud__item">Очки: <span id="score">0</span></div>
+        <div class="hud__item">Осталось: <span id="left">0</span></div>
+      </div>
+
+      <div id="field" class="field">
+        <div id="rocket" class="rocket"></div>
+      </div>
+    </section>
+
+    <section id="screen-end" class="screen">
+      <h2 id="end-title" class="title">Игра окончена</h2>
+      <p id="end-text" class="subtitle"></p>
+      <p class="subtitle">Итоговый счёт: <span id="final-score">0</span></p>
+      <button id="btn-restart" class="btn btn--primary">Заново</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
